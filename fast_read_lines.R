@@ -1,3 +1,6 @@
+# fast_read_lines.R
+# Memory efficient import of text files
+#
 fast_read_lines <- function(filename) {
   size <- file.info(filename)$size
   buf <- readChar(filename, size, useBytes = TRUE)
